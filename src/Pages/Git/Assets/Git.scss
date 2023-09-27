@@ -1,0 +1,179 @@
+
+.nav-button{
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    .nav-button{
+        display: block;
+        position: fixed;
+        left: 0;
+        padding: 10px;
+        color: white;
+        background-color: #279EFF;
+        border-radius:0 3px 3px 0px;
+    }
+    
+}
+
+.invisible{
+    display: none;
+}
+
+
+.Git-container{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 50px auto;
+    font-family: 'Nunito';
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+
+
+    .scroll-nav{
+        width:25%;
+        height: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        margin-top: 25px;
+        li{
+            font-weight: 600;
+            li{
+                margin-left:10px ;
+                margin-bottom:10px;
+                font-weight: 300;
+            }
+        }
+       
+    }
+
+    .scroll-content{
+        width: 60%;
+        height: 100%;
+        margin-bottom: 25px;
+        h1{
+            font-weight: 700;
+        }
+        h3{
+            color: #016A70;
+        }
+        h2,h3,h4,h5,h6{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 300;
+        }
+
+    }
+
+    .active{
+        font-weight: 700 !important;
+        color: green;
+        border-left: 2px solid orange;
+        padding-left: 5px;
+    }
+
+    .figure{
+        width: 500px;
+
+    }
+
+    figcaption{
+        font-size: 0.7rem;
+        font-style: italic;
+        margin-top: 5px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .command-box{
+        padding: 25px;
+        margin-top: 25px;
+        background-color: #D2E0FB;
+        border-radius: 5px;
+    }
+
+    .comment{
+        font-family: 'Urbanist';
+        color:gray;
+        
+    }
+    .scroll-nav-mobile{
+        display: none;
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+        .scroll-nav{
+            display: none;
+        }
+    
+
+        .scroll-nav-mobile{
+            padding: 10px;
+            display: flex;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            top:0;
+            left: 0;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            margin: auto;
+            opacity: 0.9;
+
+            li{
+                font-weight: 600;
+                li{
+                    margin-left:10px ;
+                    margin-bottom:10px;
+                    font-weight: 300;
+                }
+            }
+
+        }
+        .nav-header{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+        }
+        .cross-mark{
+            position: fixed;
+            right: 0;
+            margin-right:15px;
+            font-size: 2rem;
+        }
+
+        .figure{
+            width: 300px;
+    
+        }
+        .scroll-content{
+            width: 100%;
+
+        }
+
+
+    }
+    .invisible{
+        display: none;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+        .figure{
+            width: 250px;
+    
+        }
+    }
+
+
+
+}
+
